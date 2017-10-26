@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@line/bot-sdk": "^4.0.0",
+    "mongoose": "^4.12.4",
     "puppeteer": "^0.12.0"
   }
 }
