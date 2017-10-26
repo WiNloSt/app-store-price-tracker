@@ -6,6 +6,7 @@
   "author": "Mahatthana Nomsawadi <mahatthana.n@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@line/bot-sdk": "^4.0.0",
     "puppeteer": "^0.12.0"
   }
 }
