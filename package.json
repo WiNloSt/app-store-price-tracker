@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:WiNloSt/app-store-price-tracker.git",
   "author": "Mahatthana Nomsawadi <mahatthana.n@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^0.12.0"
+  }
 }
