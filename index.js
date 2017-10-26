@@ -8,10 +8,11 @@ const LINE_GROUP_ID = process.env.LINE_GROUP_ID
 const main = async () => {
   const price = await getPrice()
   const priceObject = extractPrice(price)
-  const latestPrice = await getLastestPrice()
+  const latestPrice = (await getLastestPrice()) || { price: Infinity }
   if (priceObject.price < latestPrice.price) {
     await storePrice(price)
     pushMessage(LINE_GROUP_ID, `Be Focused Pro price dropped!!! ${price}`)
+    console.log('add new price')
   }
   disconnectFromDatabase()
   console.log(price, `${latestPrice.currency}${latestPrice.price}`)
